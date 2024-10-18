@@ -1,2 +1,1 @@
-# alx-backend-python
-Python for backend
+# 0x02. Python - Async Comprehension
