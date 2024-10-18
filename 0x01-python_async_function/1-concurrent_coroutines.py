@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Defines a coroutine that executes multiple coroutines concurrently."""
 import asyncio
+from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list:
+async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     Executes multiple coroutines concurrently and
     returns their results in the order of completion.
