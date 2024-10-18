@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Defines a coroutine that executes multiple coroutines concurrently."""
 import asyncio
+from typing import List
 
 task_wait_random = __import__('3-tasks').task_wait_random
 
 
-async def task_wait_n(n: int, max_delay: int) -> list[float]:
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """
     Executes multiple asynchronous tasks concurrently and
     returns their results as they complete.
