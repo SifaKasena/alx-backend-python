@@ -5,6 +5,7 @@ import random
 from typing import Generator
 from types import NoneType
 
+
 async def async_generator() -> Generator[float, NoneType, NoneType]:
     """
     An asynchronous generator that yields random numbers.
